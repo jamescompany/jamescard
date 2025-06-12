@@ -1,23 +1,34 @@
 # James Company Business Card
 
-This repository hosts a redirect page for James Company's digital business card QR code.
+Digital business card for James Company.
 
-## Purpose
-Provides a stable URL for QR codes that redirects to the main business card page with fallback options.
+## Development
 
-## Redirect Priority
-1. Primary: https://jamescompany.kr/jamescard
-2. Secondary: https://jamescompany.netlify.app/jamescard
-3. Tertiary: https://jamescompany.vercel.app/jamescard
+```bash
+npm install
+npm run dev
+```
 
-## QR Code URL
-Generate QR code with: `https://jamescompany.github.io/jamescard/`
+## Build
+
+```bash
+npm run build
+```
+
+## Deploy to GitHub Pages
+
+```bash
+npm run deploy
+```
+
+## Access
+
+- Development: http://localhost:5173
+- Production: https://jamescompany.github.io/jamescard/
 
 ## Contact
+
 - Email: founder@jamescompany.kr
 - Phone: +82 10-8327-6861
 - KakaoTalk ID: jamescompanykr
 - LINE ID: jamescompanykr
-
----
-© 2025 James Company. All rights reserved.

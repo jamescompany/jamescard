@@ -1,0 +1,176 @@
+.contactSection {
+  margin-top: 20px;
+}
+
+.sectionTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 16px;
+  text-align: center;
+}
+
+.contactItem {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+.contactItem:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contactIcon {
+  font-size: 24px;
+}
+
+.contactLabel {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 2px;
+}
+
+.contactValue {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactValue:hover {
+  color: #4A90E2;
+}
+
+.kakaoSection {
+  background: rgba(255, 235, 51, 0.1);
+  border: 1px solid rgba(255, 235, 51, 0.2);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  transition: all 0.3s ease;
+  margin-bottom: 12px;
+}
+
+.kakaoSection:hover {
+  background: rgba(255, 235, 51, 0.15);
+  border-color: rgba(255, 235, 51, 0.3);
+}
+
+.kakaoInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.kakaoIcon {
+  font-size: 32px;
+}
+
+.kakaoLabel {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 4px;
+}
+
+.kakaoId {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  font-family: 'Courier New', monospace;
+}
+
+.lineSection {
+  background: rgba(0, 195, 0, 0.1);
+  border: 1px solid rgba(0, 195, 0, 0.2);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.lineSection:hover {
+  background: rgba(0, 195, 0, 0.15);
+  border-color: rgba(0, 195, 0, 0.3);
+}
+
+.lineInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lineIcon {
+  font-size: 32px;
+}
+
+.lineLabel {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 4px;
+}
+
+.lineId {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  font-family: 'Courier New', monospace;
+}
+
+.copyButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.copyButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.copyButton:active {
+  transform: scale(0.95);
+}
+
+.copyButton svg {
+  width: 16px;
+  height: 16px;
+}
+
+.hint {
+  text-align: center;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 12px 0 0;
+  font-style: italic;
+}
