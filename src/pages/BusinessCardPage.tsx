@@ -35,14 +35,6 @@ const BusinessCardPage: React.FC = () => {
       url: 'https://www.linkedin.com/in/babblingjames/',
       icon: '💼',
       color: '#0077B5'
-    },
-    {
-      id: 'remember',
-      title: '리멤버',
-      subtitle: '비즈니스 명함',
-      url: 'https://link.rmbr.in/069d9h',
-      icon: '📇',
-      color: '#00C471'
     }
   ];
 
