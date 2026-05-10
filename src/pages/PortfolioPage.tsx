@@ -2,6 +2,9 @@ import React from 'react';
 import styles from './PortfolioPage.module.css';
 import Portfolio, { Project } from '../components/Portfolio';
 
+const BASE = import.meta.env.BASE_URL;
+const asset = (path: string) => `${BASE}${path.replace(/^\//, '')}`;
+
 const PortfolioPage: React.FC = () => {
   const projects: Project[] = [
     {
@@ -10,7 +13,7 @@ const PortfolioPage: React.FC = () => {
       description: '소프트웨어 릴리즈 준비 상태를 AI로 평가하는 SaaS. 0–100점 Release Confidence Score와 GO / HOLD 판단, AI 테스트 케이스, PDF 리포트 제공.',
       status: 'live',
       url: 'https://releasegate.app',
-      imageUrl: '/projects/releasegate.png',
+      imageUrl: asset('projects/releasegate.png'),
       tags: ['SaaS', 'AI', 'FastAPI', 'React'],
       year: '2026',
       role: 'Founder'
@@ -20,7 +23,7 @@ const PortfolioPage: React.FC = () => {
       title: 'James Company',
       description: 'QA 생태계 발전에 기여하는 All-In-One QA 커뮤니티 플랫폼. 공익 활동으로 전환 후 일시 정지 상태.',
       status: 'archived',
-      imageUrl: '/projects/james-company.png',
+      imageUrl: asset('projects/james-company.png'),
       tags: ['QA', 'Community', 'Platform'],
       year: '2024',
       role: 'Founder'
@@ -31,7 +34,7 @@ const PortfolioPage: React.FC = () => {
       description: '오늘의 트렌드 키워드를 AI가 4개 카테고리로 쉽게 풀어주는 서비스. 매일 자동 생성, 북마크·읽기 기록 지원.',
       status: 'live',
       url: 'https://easy-trend-explainer.vercel.app',
-      imageUrl: '/projects/easy-trend-explainer.png',
+      imageUrl: asset('projects/easy-trend-explainer.png'),
       tags: ['AI', 'Next.js', 'Vercel KV'],
       year: '2026'
     },
@@ -40,7 +43,7 @@ const PortfolioPage: React.FC = () => {
       title: 'QA Learning 101',
       description: 'QA 전문가를 위한 대화형 학습 플랫폼. 테스팅 방법론·자동화 도구·모범 사례를 실습으로 익히는 플레이그라운드 제공.',
       status: 'live',
-      imageUrl: '/projects/qa-learning-101.png',
+      imageUrl: asset('projects/qa-learning-101.png'),
       tags: ['QA', 'Education', 'Playwright', 'Cypress'],
       year: '2026'
     },
@@ -49,7 +52,7 @@ const PortfolioPage: React.FC = () => {
       title: '119 Challenge',
       description: '"11.900초에 정확히 멈추기" 타이밍 감각 게임. 실시간 랭킹·포디움·기록 알림. SKKU EMBA 이벤트용 MVP.',
       status: 'live',
-      imageUrl: '/projects/119-challenge.png',
+      imageUrl: asset('projects/119-challenge.png'),
       tags: ['React', 'FastAPI', 'Render'],
       year: '2026'
     },
@@ -58,7 +61,7 @@ const PortfolioPage: React.FC = () => {
       title: 'CareLog',
       description: '병원 환자의 I/O(섭취·배설)를 기록·관리하는 시스템. Next.js 웹 + Expo 모바일 앱 + Cloudflare Workers 풀스택.',
       status: 'archived',
-      imageUrl: '/projects/carelog.png',
+      imageUrl: asset('projects/carelog.png'),
       tags: ['Next.js', 'Expo', 'Prisma'],
       year: '2026'
     },
@@ -67,7 +70,7 @@ const PortfolioPage: React.FC = () => {
       title: 'EMBA Typhoon',
       description: '대학원 골프 동호회 운영 시스템. 197개 골프장 DB 기반 라이브 스코어링, 결제 워크플로우, 멤버 관리.',
       status: 'internal',
-      imageUrl: '/projects/emba-typhoon.png',
+      imageUrl: asset('projects/emba-typhoon.png'),
       tags: ['Next.js', 'Express', 'Prisma'],
       year: '2026'
     },
@@ -76,7 +79,7 @@ const PortfolioPage: React.FC = () => {
       title: 'Cohort Connect',
       description: '대학원 동기 네트워킹 설문 앱. 학교 도메인 제한 OAuth, RLS 기반 보안, 운영자 대시보드.',
       status: 'internal',
-      imageUrl: '/projects/cohort-connect.png',
+      imageUrl: asset('projects/cohort-connect.png'),
       tags: ['Next.js', 'Supabase', 'Cloudflare'],
       year: '2026'
     },
@@ -93,7 +96,7 @@ const PortfolioPage: React.FC = () => {
       title: 'Gyroball RPM',
       description: '자이로볼의 RPM을 카메라/오디오 주파수 분석으로 실시간 측정하는 안드로이드 앱. 4-환경 모노레포 + Kotlin 네이티브 모듈.',
       status: 'internal',
-      imageUrl: '/projects/gyroball-rpm.png',
+      imageUrl: asset('projects/gyroball-rpm.png'),
       tags: ['React Native', 'Kotlin', 'Monorepo'],
       year: '2026'
     }
@@ -125,7 +128,7 @@ const PortfolioPage: React.FC = () => {
         <div className={styles.heroBackdrop} />
         <div className={styles.heroInner}>
           <div className={styles.logoWrap}>
-            <img src="/hongjae_logo.svg" alt="Hongjae Kang" className={styles.logoImage} />
+            <img src={asset('hongjae_logo.svg')} alt="Hongjae Kang" className={styles.logoImage} />
           </div>
           <div className={styles.heroText}>
             <p className={styles.eyebrow}>Independent Product Consultant</p>
