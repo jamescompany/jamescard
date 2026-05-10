@@ -1,8 +1,8 @@
-import BusinessCardPage from './pages/BusinessCardPage'
+import PortfolioPage from './pages/PortfolioPage'
 import './App.css'
 
 function App() {
-  return <BusinessCardPage />
+  return <PortfolioPage />
 }
 
 export default App
